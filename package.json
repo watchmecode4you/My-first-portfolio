@@ -1,0 +1,25 @@
+{
+  "name": "my-first-portfolio",
+  "version": "1.0.0",
+  "description": "This is application represents an attempt to create a small static webpage showing my portofolio.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "modules": "^0.4.0",
+    "node": "^15.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watchmecode4you/My-first-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/watchmecode4you/My-first-portfolio/issues"
+  },
+  "homepage": "https://github.com/watchmecode4you/My-first-portfolio#readme"
+}
