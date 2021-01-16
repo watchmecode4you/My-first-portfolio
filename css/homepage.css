@@ -1,0 +1,695 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+  scroll-behavior:auto;
+}
+
+body {
+    font-size: 14px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* ============Header section===============*/
+.header {
+    background-image: url(../img/keyboard_image_large-min.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    height: 768px;
+}
+.header-overlay {
+    background-color: rgba(59,59,59,0.4);
+    height: 768px;
+}
+.header .header-title{
+    text-align: center;
+    padding-top: 200px;
+}
+.header .header-caption{
+    background-color: rgb(255,255,255,0.2);
+    text-align: center;
+    margin-top: 0px;
+}
+.header .header-title p{
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    margin: 0px;
+}
+.header .header-caption p{
+    font-family: 'Alata', 'Sans Serif';
+    font-weight: 200; 
+    font-size: 15px;
+    color: #129cf3;
+    letter-spacing: .6em;
+    margin: 0px;
+}
+.header-button {
+    margin-top: 30px;
+    text-align: center;
+}
+.header-button .btn-tour{
+    width: 200px;
+    height: 60px;
+    font-family: 'Alata', 'Sans Serif';
+    color:#fff;
+    background-color: transparent;
+    border-color : rgb(255,255,255,0.2);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+}
+.header-button .btn-tour:hover{
+    background-color: rgb(255,255,255,0.2);
+    
+}
+.header-button .btn-introVideo{
+    width: 200px;
+    height: 60px;
+    font-family: 'Alata', 'Sans Serif';
+    color:#fff;
+    background-color: transparent;
+    border-color : rgb(255,255,255,0.2);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+}
+.header-button .btn-introVideo:hover{
+    background-color: rgb(255,255,255,0.2);
+    
+}
+
+/* ============Introduction section===============*/
+.introduction .Modal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    transform: all 0.6s;
+    -o-transform: all 0.6s;
+    -webkit-transform: all 0.6s;
+    -moz-transform: all 0.6s;
+}
+.introduction .Modal .modal-content{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding-bottom: 30px;
+    border: 1px solid #888;
+    width: 70%;
+    height: 100%;
+}
+.introduction .Modal .iFrame{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.introduction .Modal .close{
+    color: #555555;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: .5;
+}
+.introduction .Modal .close:hover,
+.introduction .Modal .close:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 1;
+}
+
+/*
+#headerPopup{
+  width:75%;
+  margin:0 auto;
+}
+#headerPopup iframe{
+  width:100%;
+  margin:0 auto;
+}
+*/
+
+/* ============Floating Choices section===============*/
+.floating-choices{
+    display: none;
+    z-index: 2;
+    position:fixed;
+    bottom: 10px;
+    right: 20px;
+    opacity: 0.3;
+    transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+.floating-choices:hover{
+    z-index: 2;
+    bottom: 30px;
+    right: 60px;
+    transform: scale(1.5);
+    opacity: 1;
+    cursor: pointer;
+}
+.floating-choices div{
+    text-align: center;
+    margin: 5px;
+    border-style: solid;
+    border-color: #BCBDBF;
+    border-radius: 20px;
+    border-width: 1px;
+    color: #BCBDBF;
+    transition: 0.7s;
+    -o-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -webkit-transition: 0.7s;
+}
+.floating-choices div:hover{
+    background-color: #129cf3;
+    border-color: #129cf3;
+    color: white;
+}
+.floating-choices div span{
+    font-family: 'Raleway', 'Sans Serif';
+    font-weight: 700;
+    padding: 5px;
+}
+
+/* ============Choices section===============*/
+.choices-container{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.choices-container i{
+    color: white;
+    font-size: 50px;
+}
+.choices .choice-education{
+    position:relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-left-width: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #BCBDBF;
+    transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    z-index: 1;
+}
+.choices .choice-education:hover{
+    background-color: #129cf3;
+    z-index: 2;
+    cursor: pointer;
+}
+.choices .choice-education h1{
+    display: inline-block;
+    width:60%;
+    color: white;
+    font-family: 'Raleway', 'Sans Serif';
+}
+.choices .choice-education i{
+    display: inline-block;
+    width:30%;
+}
+.choices .choice-work{
+    position:relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-left-width: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    background-color: #BCBDBF;
+    transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    z-index: 1;
+}
+.choices .choice-work:hover{
+    background-color: #129cf3;
+    z-index: 2;
+    cursor: pointer;
+}
+.choices .choice-work h1{
+    display: inline-block;
+    width:60%;
+    color: white;
+    font-family: 'Raleway', 'Sans Serif';
+}
+.choices .choice-work i{
+    display: inline-block;
+    width:30%;
+}
+.choices .choice-personal{
+    position:relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border-left-width: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    background-color: #BCBDBF;
+    transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    z-index: 1;
+}
+.choices .choice-personal:hover{
+    background-color: #129cf3;
+    z-index: 2;
+    cursor: pointer;
+}
+.choices .choice-personal h1{
+    display: inline-block;
+    width:60%;
+    color: white;
+    font-family: 'Raleway', 'Sans Serif';
+}
+.choices .choice-personal i{
+    display: inline-block;
+    width:30%;
+}
+
+/* ============Education section===============*/
+.edu{
+    background-image: url(../img/aub-img-min.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+.edu-overlay{
+    background-color: rgb(0,0,0,0.3);
+}
+.edu .section-heading{
+    color: white;
+    margin-top:60px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    
+}
+.edu .section-heading .university-name{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+.edu .section-heading .university-subname{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+.edu .section-heading .major-name{
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+}
+.edu .section-description{
+    color: white;
+    margin-top:30px;
+    text-align: center;
+}
+.edu .section-description h5{
+    background-color: rgb(0,0,0,0.3);
+    border: 1px;
+    border-color : rgb(255,255,255,0.7);
+    border-style: solid;
+    border-radius: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 20px;
+}
+.edu .section-body{
+    color: white;
+    margin-top:80px;
+    padding-bottom: 100px;
+}
+.edu .section-body .category{
+    background-color: rgb(0,0,0,0.6);
+    border: 1px;
+    border-color : rgb(255,255,255,0.7);
+    border-style: solid;
+    border-radius: 100px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.edu .section-body .courses-taken h3{
+    margin-bottom: 30px;
+}
+.edu .section-body .courses-taken ul li{
+    list-style-type: none;
+}
+.edu .section-body .courses-taken .courses-lang{
+    display: inline-block;
+    width:40%;
+}
+.edu .section-body .courses-taken .courses-other{
+    display: inline-block;
+    width:40%;
+}
+.edu .section-body .projects h3{
+    margin-bottom: 30px;
+}
+.edu .section-body .projects h6{
+    margin: 20px;
+}
+
+
+/* ============Work section===============*/
+.work{
+    background-image: url(../img/office-photo-4-min.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+.work .section-work-overlay{
+    background-color: rgba(0,0,0,0.6);
+}
+.work .section-work-overlay .section-work-spacing{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.work .section-work-title{
+    padding-bottom: 50px;
+}
+.work .section-work-title h1,
+.work .section-work-title h2,
+.work .section-work-title h4
+{
+    text-align: center;
+    font-family: 'Raleway', 'Sans Serif';
+    color: white;
+}
+.work .section-work-keyFunctionalities h3{
+    text-align: center;
+    font-family: 'Raleway', 'Sans Serif';
+    color: white;
+}
+.work .section-work-functions{
+    margin-top: 50px;
+}
+.work .section-work-functions .job-features{
+    position:relative;
+    text-align: center;
+    color: white;
+    font-family: 'Alata', 'Sans Serif';
+    border: 1px;
+    border-radius: 10px;
+    border-color: rgb(255,255,255,0.2);
+    border-style: solid;
+    height:160px;
+    transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.work .section-work-functions .job-features:hover{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border: 1px;
+    border-radius: 30px;
+    border-color: rgb(255,255,255,0.2);
+    border-style: solid;
+    height: 160px;
+    background-color: #129cf3;
+    transform: scale(1.1);
+}
+.work .section-work-functions .job-features h6{
+    position: absolute;
+    top: 30%;
+    margin: 5px;
+    
+
+}
+.work .section-work-certiTitle{
+    margin-top: 80px;
+}
+.work .section-work-certiTitle h3{
+    text-align: center;
+    font-family: 'Raleway', 'Sans Serif';
+    color: white;
+}
+.work .section-work-certificates{
+    margin-top: 70px;
+}
+
+.work .section-work-certificates .imgGoldDiv{
+    margin-right: 0px;
+}
+.work .section-work-certificates .imgPlatinumDiv{
+    margin-left: 0px;
+}
+.work .section-work-certificates .imgCourseraOne{
+    margin-right: 0px;
+}
+.work .section-work-certificates .imgCourseraTwo{
+    margin-left: 0px;
+}
+
+.work .section-work-certificates img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: #129cf3;
+    transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    z-index: 1;
+}
+
+.work .section-work-certificates .imgGoldDiv:hover{
+    z-index: 2;
+}
+.work .section-work-certificates .imgGoldDiv:hover > img{
+    transform: scale(1.3);
+}
+.work .section-work-certificates .imgPlatinumDiv:hover{
+    z-index: 2;
+}
+.work .section-work-certificates .imgPlatinumDiv:hover > img{
+    transform: scale(1.3);
+}
+.work .section-work-certificates .imgCourseraOne:hover{
+    z-index: 2;
+}
+.work .section-work-certificates .imgCourseraOne:hover > img{
+    transform: scale(1.3);
+}
+.work .section-work-certificates .imgCourseraTwo:hover{
+    z-index: 2;
+}
+.work .section-work-certificates .imgCourseraTwo:hover > img{
+    transform: scale(1.3);
+}
+
+.work .section-work-certificates figcaption{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    margin-top:15px;
+}
+
+.work .section-work-techTitle{
+    margin-top: 100px;   
+}
+.work .section-work-techTitle h2{
+    text-align: center;
+    font-family: 'Raleway', 'Sans Serif';
+    color: white;
+}
+
+.work .section-work-techSkills{
+    margin-top: 50px;
+}
+.work .section-work-techSkills .programming-lang{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Raleway', 'Sans Serif';
+    color: white;
+    font-size: 20px;
+}
+.work .section-work-techSkills .programming-lang .languages,
+.work .section-work-techSkills .programming-lang .image
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.work .section-work-techSkills .programming-lang .languages ul{
+    list-style-type: none;
+}
+.work .section-work-techSkills .programming-lang .languages li{
+    margin: 20px;
+}
+.work .section-work-techSkills .programming-lang .languages li strong{
+    color: #129cf3;
+}
+.work .section-work-techSkills .others{
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Raleway', 'Sans Serif';
+    color: white;
+    font-size: 22px;
+}
+.work .section-workk-techSkills .others .additional,
+.work .section-workk-techSkills .others .image
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.work .section-work-techSkills .others .additional ul{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+.work .section-work-techSkills .others .additional li{
+    margin: 20px;
+}
+.work .section-work-techSkills .others .additional li strong{
+    color: #129cf3;
+}
+
+/* ============Personal Information===============*/
+.personal{
+   background-image: url(../img/wallpaper-videogames-min.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    -moz-transition: all 2s;
+    color: white;
+}
+.personal .personal-overlay{
+    background-color: rgba(0,0,0,0.6);
+}
+.personal .section-personal-spacing{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.personal .section-personal-spacing .title{
+    text-align: center;
+    font-family: 'Raleway', 'Sans Serif';
+    padding-bottom: 50px;
+}
+.personal .section-personal-spacing .hobbies{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.personal .section-personal-spacing .hobbies i{
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+.personal .section-personal-spacing .hobbies h3{
+    font-family: 'Raleway', 'Sans Serif';
+}
+
+
+/* ============Social Media Connections===============*/
+.social-media{
+    background-color: white;
+    padding-bottom: 50px;
+}
+.social-media .content{
+    padding-top: 50px;
+}
+.social-media .message{
+    text-align: center;
+    font-family: 'Raleway', 'Sans Serif';
+    position: relative;
+}
+.social-media .message h1{   
+    color: dimgrey; 
+}
+.social-media .platforms{
+    font-size: 60px;
+    text-align: center;
+    color: dimgrey;
+}
+.social-media .platforms .platform strong{
+    font-family: 'Raleway', 'Sans Serif'; 
+    font-size: 20px;
+}
+.social-media .platforms i{
+    transition: all .6s;
+    -o-transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+}
+.social-media .platforms .instagram:hover i{
+    color: deeppink;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.social-media .platforms .linkedin:hover i{
+    color: #0e76a8;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.social-media .platforms .facebook:hover i{
+    color: #3b5998;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* ============Footer===============*/
+.footer{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: dimgrey;
+    color: white;
+    background-color: 
+}
+.footer .copyright h6{
+    text-align: center;
+}
