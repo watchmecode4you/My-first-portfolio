@@ -57,20 +57,49 @@ body {
     margin-top: 30px;
     text-align: center;
 }
+
+.header-button .input-insert-name { 
+    width: 300px;
+    height: 60px;
+    font-family: 'Alata', 'Sans Serif';
+    color:#fff;
+    font-size: 18px;
+    background-color: transparent;
+    border-bottom: solid 1px;
+    border-right : 0px;
+    border-color : rgb(255,255,255,0.2);
+    padding: 5px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    outline: none;
+}
+
 .header-button .btn-tour{
     width: 200px;
     height: 60px;
     font-family: 'Alata', 'Sans Serif';
     color:#fff;
+    font-size: 18px;
     background-color: transparent;
+    border: solid 1px;
     border-color : rgb(255,255,255,0.2);
+    border-radius: 5px;
+    padding: 5px;
     transition: all 1s;
     -webkit-transition: all 1s;
     -o-transition: all 1s;
     -moz-transition: all 1s;
+    outline: none;
 }
+
+::placeholder{
+    color: #ffffff;
+}
+
 .header-button .btn-tour:hover{
-    background-color: rgb(255,255,255,0.2);
+    background-color: rgb(18,156,243);
     
 }
 .header-button .btn-introVideo{
