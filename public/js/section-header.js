@@ -1,33 +1,18 @@
-/* Background-image slideshow */
-$(document).ready(function(){
-   //Array of images which you want to show: Use path you want.
-    var images=new Array('img/wallpaper-basketball-min.jpg','img/wallpaper-football-min.jpg','img/wallpaper-music-min.jpg','img/wallpaper-videogames-min.jpg');
-    var nextimage=0;
-    doSlideshow();
-
-    function doSlideshow(){
-        if(nextimage>=images.length){nextimage=0;}
-        $('.personal')
-        .css('background-image','url("' + images[nextimage++] + '")')
-        .fadeIn(5000,function(){
-            setTimeout(doSlideshow,5000);
-        });
-    } 
-});
-
 /* Add smooth scrolling on click to its respective sections */
 $(document).ready(function() {
     
                 'use strict';
                 
-                var $root = $('html, body');
+                let $root = $('html, body');
                 
                 /* Auto scroll for the button section*/            
     
                 $('.btn-tour').click(function(){
-                    
-                    'use strict';
-                   
+
+                    $('.header-button').fadeOut(1000)
+
+                    $('.choices-container').show();
+
                     $root.animate({
                         scrollTop: $('.choices').offset().top
                     }, 1500);
@@ -36,42 +21,8 @@ $(document).ready(function() {
                         
                 });  
     
-                /* Auto scroll for the choices section*/
-    
-                $('.choice-education').click(function(){
-                    
-                    'use strict';
-                    
-                     $root.animate({
-                        scrollTop: $('.edu').offset().top
-                    }, 600);
 
-                    return false;
-                });
-    
-                $('.choice-work').click(function(){
-                    
-                    'use strict';
-                    
-                     $root.animate({
-                        scrollTop: $('.work').offset().top
-                    }, 600);
-
-                    return false;
-                });  
-    
-                $('.choice-personal').click(function(){
-                    
-                    'use strict';
-                    
-                     $root.animate({
-                        scrollTop: $('.personal').offset().top
-                    }, 600);
-
-                    return false;
-                });  
-    
-                /* Auto scroll for the floating choices section*/
+                /* Auto scroll for the floating choices section
     
                 $('.floating-choices .education-history').click(function(){
                     
@@ -105,9 +56,10 @@ $(document).ready(function() {
 
                     return false;
                 });  
+                */
             });
 
-/* Show Floating choices section after the choices section is passed */
+/* Show Floating choices section after the choices section is passed 
 $(document).ready(function(){
     
     $(window).on('scroll', function() { 
@@ -119,6 +71,7 @@ $(document).ready(function(){
             }
     });
 });
+*/
 
 /* Show Video of myself when i click the watch intro button */
 $(document).ready(function(){

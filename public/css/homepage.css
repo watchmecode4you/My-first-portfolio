@@ -24,6 +24,10 @@ body {
     -o-background-size: cover;
     -webkit-background-size: cover;
     height: 768px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
 }
 .header-overlay {
     background-color: rgba(59,59,59,0.4);
@@ -224,8 +228,13 @@ body {
 
 /* ============Choices section===============*/
 .choices-container{
+    display: none;
     padding-top: 200px;
     padding-bottom: 200px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
 }
 .choices-container i{
     color: white;
@@ -338,6 +347,7 @@ body {
 
 /* ============Education section===============*/
 .edu{
+    display:none;
     background-image: url(../img/aub-img-min.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -423,6 +433,7 @@ body {
 
 /* ============Work section===============*/
 .work{
+    display:none;
     background-image: url(../img/office-photo-4-min.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -624,6 +635,7 @@ body {
 
 /* ============Personal Information===============*/
 .personal{
+    display:none;
    background-image: url(../img/wallpaper-videogames-min.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
